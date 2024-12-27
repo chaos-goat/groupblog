@@ -1,0 +1,9 @@
+<section class="articlegrid primary">
+    {% for post in item %}
+        <a href="{{ post.url }}">
+            <article class="articlecard">
+                {{ post.data.title }}
+            </article>
+        </a>
+    {% endfor %}
+</section>

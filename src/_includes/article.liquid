@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <main class="article">
+            <header>
+                <h1>{{ site.name }}</h1>
+            </header>
+            <nav class="main">
+                {% include "./components/navbar.liquid" %}
+            </nav>
+            <section class="title">
+                <h2>{{ title }}</h2>
+                {% if author %}
+                    {% assign myAuthor = authors | getAuthor: author %}
+                
+                    <p>Written by <a href="/authors/{{ author }}">{{ myAuthor.name }}</a></p>
+                {% endif %}
+                <ul class="tagflex">
+                {% for tag in tags %}
+                    {% if tag != "post" %}
+                        <a href="/tag/{{ tag | slug }}/" class="taglink">
+                            <li class="tagpill" href="/">{{ tag }}</li>
+                        {% endif %}
+                    </a>
+                {%- endfor %}
+                </ul>
+            </section>
+            <article class="primary">
+                {{ content }}
+            </article>
+            <footer>
+                {% include "./components/footer.liquid" %}
+            </footer>
+        </main>
+    </body>
+</html>

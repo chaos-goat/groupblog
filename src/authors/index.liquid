@@ -1,0 +1,18 @@
+---
+title: Authors
+layout: authors.liquid
+---
+
+<h2>Authors</h2>
+
+<section class="authorgrid">
+    {% for author in authors %}
+        <a href="\authors\{{ author.key }}\" class="nolink">
+            <div class="authorcard">
+                <img src="https://dummyimage.com/480&text=500x500"> 
+                <P>{{ author.name }}</p>
+                <p>{{ author.bio }}</p>
+            </div>
+        </a>
+    {% endfor %}
+</section>

@@ -1,0 +1,14 @@
+---
+title: Tags
+layout: tags.liquid
+---
+
+<ul class="tagflex">
+  {% for tag in collections.tagList %}
+    <a href="/tag/{{ tag.title | slug }}/" class="taglink">
+      <li class="tagpill">
+        {{ tag.title }} <span class="numberspan">{{ tag.count }}</span>
+      </li>
+    </a>
+  {% endfor %}
+</ul>

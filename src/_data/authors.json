@@ -1,0 +1,28 @@
+[
+    {
+        "key" : "salithox",
+        "name" : "Salithox",
+        "bio" : "insert bio here",
+        "website" : "salithox.com",
+        "pfp" : "./assets/images/pfp/bluegoat.png",
+        "social" : ""
+    },
+    {
+        "key" : "goat",
+        "name" : "Chaos-Goat",
+        "bio" : "insert bio here",
+        "website" : "chaosgoat.neocities.org",
+        "pfp" : "./assets/images/pfp/bluegoat.png",
+        "social" : "chaosgoat.bsky.social"
+    },
+    {
+        "key" : "kohaku",
+        "name" : "Kohaku-Moon",
+        "bio" : "insert bio here",
+        "website" : "tealovelemons.com",
+        "pfp" : "./assets/images/pfp/bluegoat.png",
+        "social" : ""
+    }
+
+
+]

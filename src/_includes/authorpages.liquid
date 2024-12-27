@@ -1,0 +1,8 @@
+---
+layout: base.liquid
+---
+            <section class="intro">
+                {{ content }}
+            </section>
+                    {% assign item = collections.post | getPostsByAuthor: author.key %}
+                    {% include "./components/articlegrid" %}
