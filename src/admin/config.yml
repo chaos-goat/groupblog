@@ -1,11 +1,11 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "raw_img/uploads/{{ author-login }}"
+media_folder: "src/raw_img/uploads/{{author-login}}"
 collections:
   - name: "article" # Used in routes, e.g., /admin/collections/blog
     label: "Article" # Used in the UI
-    folder: "articles/{{ author-login }}" # The path to the folder where the documents are stored
+    folder: "src/articles/{{author-login}}" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
